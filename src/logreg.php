@@ -101,7 +101,7 @@ $type = $_FILES['user_pp']['type'];
 $domain = substr($name, -4,4);
 $blavalueo = rand(1,50000000);
 $blavaluet = rand(1,80000000);
-$photoname = $blavalueo.$blavaluet.$domain;
+$photoname = $blavalueo.$blavaluet.".".$domain;
 
 if (isset($_POST['pp_delete'])) {
 	unlink("$uploadfile/".$sessiongive['user_pp']);

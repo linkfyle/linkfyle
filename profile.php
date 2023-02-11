@@ -10,13 +10,13 @@
  	<?php if (@$_GET['user_username'] == @$ugurcek['user_username']) {?>
 		<div class="profile-photo">
 						<img src="<?php 
-						if(!empty($idgive['user_pp'])){
-							echo "upload/".$idgive['user_pp']; 
+						if(!empty($ugurcek['user_pp'])){
+							echo "upload/".$ugurcek['user_pp']; 
 						}else{
 							echo "https://www.creativefabrica.com/wp-content/uploads/2020/10/13/Tree-Purple-Nature-Illustration-Vector-Graphics-6037776-1.jpg";
 						}
 						?>">
-					</div>1
+					</div>
 	 			<h1><?php echo $ugurcek['user_name'] ?> <?php echo $ugurcek['user_lastname'] ?></h1><br>
 		 		<h3><?php echo $ugurcek['user_username'] ?>#<?php if (strlen($ugurcek['user_id']) == 1) {
 		 			echo '000'. $ugurcek['user_id']; } else if (strlen($ugurcek['user_id']) == 2) {

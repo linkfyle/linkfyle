@@ -15,7 +15,7 @@
     <form action="src/logreg.php" method="POST" enctype="multipart/form-data">
         <label>Profil Resim</label> 
         <?php if (empty($ugurcek['user_pp'])) { ?>
-            <input type="file" name="user_pp" accept="image/jpeg,image/jpg" required="">
+            <input type="file" name="user_pp" accept="image/jpg, image/jpeg, image/png" required="">
         <?php }else{ ?>
             <img style="max-width: 150px; min-width: 150px;" src="upload/<?php echo $ugurcek['user_pp']; ?>">
             <input type="submit" name="pp_delete" value="Profil Fotoğrafını Sil">

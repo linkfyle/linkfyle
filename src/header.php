@@ -2,11 +2,11 @@
 	@ob_start();
 	@session_start();
 	include 'connect.php';
-	// $userques=$db->prepare("SELECT * FROM user where user_id=:id");
-	// $userques->execute(array(
-	// 	'id' => 'user_id'
-	// ));
-	// $giveuser=$userques->fetch(PDO::FETCH_ASSOC);
+	/*$userques=$db->prepare("SELECT * FROM user where user_id=:id");
+	$userques->execute(array(
+		'id' => 'user_id'
+	));
+	$giveuser=$userques->fetch(PDO::FETCH_ASSOC);*/
 ?>
 
 <!DOCTYPE html>

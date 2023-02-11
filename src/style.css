@@ -501,6 +501,11 @@ nav .container .menu ul li .register:hover{
 	margin-right: 20px;
 }
 
+.profile-photo img{
+	width: 150px;
+	height: auto;
+}
+
 .stebs .st-one{
 	display: flex;
 	border-radius: 5px;
