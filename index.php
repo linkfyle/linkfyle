@@ -70,7 +70,7 @@
 					<div class="profile-photo">
 						<img src="<?php 
 						if(!empty($idgive['user_pp'])){
-							echo $idgive['user_pp']; 
+							echo "upload/".$idgive['user_pp']; 
 						}else{
 							echo "https://www.creativefabrica.com/wp-content/uploads/2020/10/13/Tree-Purple-Nature-Illustration-Vector-Graphics-6037776-1.jpg";
 						}

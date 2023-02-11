@@ -1,14 +1,10 @@
 <?php include 'src/header.php';
 
 	if (@$_SESSION['oturum']) {
-		header("Location:");
+		header("Location:index.php");
 	}
-/*<?php if (@$_GET['stat'] == 'no' ) {?>
-								<div style="height: 25px; width: 250px; background-color: darkred;">
-									selamın aleykümma
-								</div>	
-				<?php } ?>*/
 ?>
+								
 
 	<section id="giris">
 		<div class="container">
@@ -48,10 +44,10 @@
 							<p>
 								Yönlendirilmediyseniz
 							</p>
-							<?php header("Refresh: 3; url=/") ?>
+							<?php header("Refresh: 3; url=index.php") ?>
 						</div>
 						<div class="giris-sol-btn">
-							<a href="/">Tıklayın</a>
+							<a href="index.php">Tıklayın</a>
 						</div>
 					</div>
 					<?php }else{ ?> 
